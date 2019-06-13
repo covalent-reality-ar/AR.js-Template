@@ -10,9 +10,9 @@
 <body style='margin : 0px; overflow: hidden;'>
     <a-scene stats embedded arjs='trackingMethod: best; debugUIEnabled: false'>
 		<a-assets>
-			<a-asset-item id="Logo" src="/models/CovalentLogo/Covalentlogo.gltf"></a-asset-item>
+			<a-asset-item id="Logo" src="AR.js-Template/models/CovalentLogo/Covalentlogo.gltf"></a-asset-item>
 		</a-assets>
-        <a-marker  marker emitevents="true" cursor="rayOrigin: mouse" preset='pattern' type='pattern' url="/markers/Covalent/pattern-marker.patt">
+        <a-marker  marker emitevents="true" cursor="rayOrigin: mouse" preset='pattern' type='pattern' url="AR.js-Template/markers/Covalent/pattern-marker.patt">
 			<a-entity gltf-model="#Logo" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear">
 
 			</a-entity>
