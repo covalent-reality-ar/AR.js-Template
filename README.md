@@ -2,6 +2,12 @@
 ToDo:
 AR way to view 3D models
 ```
+---
+Links to keep:
+[Single Marker Business Card example](https://www.youtube.com/watch?v=dRY6iuGkKBM)
+[AR Business Card example with picture marker and links](https://www.youtube.com/watch?v=pTITrp_xOis)
+	[Link to webpage press F12 in and go to source tab to view code](https://ron-dagdag.azurewebsites.net/public/)
+---
 # AR.js-Template
 
 ## Introduction
