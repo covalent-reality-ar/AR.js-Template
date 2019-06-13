@@ -4,14 +4,15 @@
 //migrate these to Covalent GitHub
 <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
 <script src="https://johnaloomis.github.io/CovalentAR/aframe/build/aframe-ar.js"></script>
+<script src="js/click.js"></script>
 
 
 <body style='margin : 0px; overflow: hidden;'>
     <a-scene stats embedded arjs='trackingMethod: best; debugUIEnabled: false'>
 		<a-assets>
-			<a-asset-item id="logo" src="https://johnaloomis.github.io/CovalentAR/three.js/experiments/Covalent/models/CovalentLogo/Covalentlogo.gltf"></a-asset-item>
+			<a-asset-item id="Logo" src="https://johnaloomis.github.io/CovalentAR/three.js/experiments/Covalent/models/CovalentLogo/Covalentlogo.gltf"></a-asset-item>
 		</a-assets>
-        <a-marker preset='pattern' type='pattern' url="https://johnaloomis.github.io/CovalentAR/three.js/experiments/Covalent/markers/Covalent/pattern-marker.patt">
+        <a-marker  marker emitevents="true" cursor="rayOrigin: mouse" preset='pattern' type='pattern' url="https://johnaloomis.github.io/CovalentAR/three.js/experiments/Covalent/markers/Covalent/pattern-marker.patt">
 			<a-entity gltf-model="#logo" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear">
 
 			</a-entity>
