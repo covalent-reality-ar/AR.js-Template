@@ -19,7 +19,7 @@
     <div class="row" id='row-ui'>
         <div class="col s12">
             <a class="waves-effect waves-light btn" onclick='hideUI()'><i class="material-icons right">reorder</i>Hide</a>
-            <h1 class='center-align'>AR-Code Generator</h1>
+            <h1 class='center-align'>QR-Code Generator</h1>
         </div>
         <div class="col s12">
             <input id="urlQrCode" type="text">
@@ -180,23 +180,9 @@ canvas.style.height = '512px';
 
 var context = canvas.getContext('2d')
 
-var hiroImage = new Image;
-hiroImage.onload = function() {
-        console.log('hiro image loaded')
-
-        if( location.hash.substr(1) !== '' ){
-                var parameters = JSON.parse(decodeURIComponent(location.hash.substr(1)))
-                document.querySelector('#urlQrCode').value = parameters.urlQrCode
-                document.querySelector('#hideUiEnabled').checked = parameters.hideUiEnabled
-                document.querySelector('#saveInUrl').checked = true
-// debugger;
-        }else{
-                document.querySelector('#urlQrCode').value = 'https://johnaloomis.github.io/CovalentAR/three.js/experiments/Covalent/AnimationTest.html'
-        }
-
+        document.querySelector('#urlQrCode').value = 'https://covalent-reality-ar.github.io/AR.js-Template/Covalent.html'
         updateARCode()
-}
-hiroImage.src = '../../data/images/hiro.png';
+
 
 function updateARCode(){
         var urlQrCode = document.querySelector('#urlQrCode').value
