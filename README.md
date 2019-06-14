@@ -16,35 +16,46 @@ This repository is designed to simplify the creation of AR projects. The intende
 ## Instructions
 
 ### 1. Create New Branch or Clone Repo
+Download and install GitHub Desktop app at: [https://desktop.github.com/](https://desktop.github.com/)
+If you don't have a GitHub account sign up for one
 
+Cloning Instructions:
+1. Log in to the Covalent GitHub account. This can be found in File>Options>Accounts
+2. Set your own GitHub account as the active user. This can be found in File>Options>Git
 
-### 2. Setup Visual Studios for HTML
+New Branch Instructions:
+	
+
+### 2. Atom for HTML
 
 
 ### 3. Create Marker and QRcode
 
 
-### 4. Test Marker
+### 4. Create Marker and QRcode
+
+
+### 5. Test Marker
 Use cube
 
 
-### 5. Create or Find Model and Animation
+### 6. Create or Find Model and Animation
 
 
-### 6. Convert to GLB and Test
+### 7. Convert to GLB and Test
 Blender, links
 ?look into other formats
 explain whu glb is nessicary
 Test with viewer - make sure settings are correct
 
 
-### 7. Test Marker and Model 
+### 8. Test Marker and Model 
 
 
-### 8. Add Animation and AFRAME objects
+### 9. Add Animation and AFRAME objects
 
 
-### 9. Add Interactions and Links
+### 10. Add Interactions and Links
 
 
 
