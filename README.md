@@ -31,8 +31,8 @@ Cloning Instructions:
 ### 2. Atom for HTML
 1. Download [Atom](https://atom.io/)
 2. In the Welcome Guide tab open the project folder you created in the previous step.
-3. Open the Git Panel from the Welcome Guide. Log in to the Covalent GitHub using the GitHub token.
-3. To commit changes they need to be Staged. Do this by right clicking the files in the unstaged window and hitting stage. You can then push the changes at with the button at the bottom right side of the window. Log in to your own GitHub account so that your work is logged. At this point you can use GitHub desktop or Atom to commit changes and push them to the online repository.
+3. Go to the Git tab. To commit changes they need to be Staged. Do this by right clicking the files in the unstaged window and hitting stage. Then write a Commit Message and press Commit to master. You can then push the changes with the button at the bottom right side of the window. Log in to your own GitHub account so that your work is logged. At this point you can use GitHub desktop or Atom to commit changes and push them to the online repository.
+
 
 ### 3. Create Marker and QRcode
 
