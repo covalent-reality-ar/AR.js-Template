@@ -49,7 +49,12 @@ Use cube
 2a. If the version is above 2.80 then enable the GLTF 2.0 plugin by going to File>User Preferences>Add-ons and make sure GLTF 2.0 is checked
 2b. If the version is less than 2.80 then download the GLTF 2.0 coverter [repository](https://github.com/KhronosGroup/glTF-Blender-IO#installation) copy the addons/io_scene_gltf2 folder into the scripts/addons/ directory of the Blender installation. Then enable the GLTF 2.0 plugin by going to File>User Preferences>Add-ons and make sure GLTF 2.0 is checked.
 3. Make you model in Blender. I recommend looking up a reference image of the thing you want to make and dragging and dropping it into the window. Then you can hit the 5 num pad key and the 7 num pad key to go into orthographic view and top view. From here you can trace the image using the knife tool(shift+s) and extrude(e key while plane is selected) the plane you create from tracing it. This may take a lot of looking up Blender tutorials online.
-4. Add materials using the Blender color materials and following the [tutorial] (https://medium.com/@matthewmain/how-to-import-a-3d-blender-object-into-a-three-js-project-as-a-gltf-file-5a67290f65f2)
+4. Add materials using the Blender color materials and following the [tutorial] (https://medium.com/@matthewmain/how-to-import-a-3d-blender-object-into-a-three-js-project-as-a-gltf-file-5a67290f65f2). Export as glb as it packages all the files together and is easier to use.
+
+
+### 8. Import glb file into gltf viewer 
+1. go to: [gltf](https://gltf-viewer.donmccurdy.com/)
+2. drag and drop your new glb file. Click on the Lighting tab and set the environment to none. This will be close to what your model will look like when using the AR framework.
 
 
 ### 8. Test Marker and Model 
