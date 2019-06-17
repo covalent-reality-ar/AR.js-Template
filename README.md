@@ -29,7 +29,10 @@ Cloning Instructions:
 7. Now you can click the Publish Repository button in the top bar. Make sure keep this code private is not selected and select covalent-reality-ar in the dropdown menu under Orgainzation
 
 ### 2. Atom for HTML
-
+1. Download [Atom](https://atom.io/)
+2. In the Welcome Guide tab open the project folder you created in the previous step.
+3. Open the Git Panel from the Welcome Guide. Log in to the Covalent GitHub using the GitHub token.
+3. To commit changes they need to be Staged. Do this by right clicking the files in the unstaged window and hitting stage. You can then push the changes at with the button at the bottom right side of the window. Log in to your own GitHub account so that your work is logged. At this point you can use GitHub desktop or Atom to commit changes and push them to the online repository.
 
 ### 3. Create Marker and QRcode
 
@@ -52,12 +55,12 @@ Use cube
 4. Add materials using the Blender color materials and following the [tutorial] (https://medium.com/@matthewmain/how-to-import-a-3d-blender-object-into-a-three-js-project-as-a-gltf-file-5a67290f65f2). Export as glb as it packages all the files together and is easier to use.
 
 
-### 8. Import glb file into gltf viewer 
+### 8. Import glb file into gltf viewer
 1. go to: [gltf](https://gltf-viewer.donmccurdy.com/)
 2. drag and drop your new glb file. Click on the Lighting tab and set the environment to none. This will be close to what your model will look like when using the AR framework.
 
 
-### 8. Test Marker and Model 
+### 8. Test Marker and Model
 
 
 ### 9. Add Animation and AFRAME objects
@@ -70,10 +73,10 @@ Use cube
 ## Helpful Links
 
 ## Explanation
-AR.js is built on Aframe for 3D scenes which uses three.js 
+AR.js is built on Aframe for 3D scenes which uses three.js
 
 ## Sources and Thank Yous
 
 First and foremost, thank you to Jerome Etienne for creating and maintaining AR.js. Without his active helping of the community and answering of questions I would have given up a long time ago. In addition thank you to all the people making tutorials and answering questions about AR.js without whom this would not be possible.
- 
+
 [AR.js](https://github.com/jeromeetienne/AR.js)- framework used
