@@ -1,6 +1,7 @@
 ```
 ToDo:
 AR way to view 3D models
+Change Covalent.html so it is commented out and the box test code is active
 
 Links to keep:
 Single Marker Business Card [example](https://www.youtube.com/watch?v=dRY6iuGkKBM)
@@ -37,11 +38,15 @@ Cloning Instructions:
 
 ### 3. Create Marker and QRcode
 1. In the git directory you created for the project copy the Covalent.html file and rename it to the name of the client you are making the project for.
-2. You can generate a QRcode using [https://covalent-reality-ar.github.io/AR.js-Template/qrcode.html](https://covalent-reality-ar.github.io/AR.js-Template/qrcode.html) change the url to point to the html file you created in step 1.
+2. You can generate a QRcode using [https://covalent-reality-ar.github.io/AR.js-Template/qrcode.html](https://covalent-reality-ar.github.io/AR.js-Template/qrcode.html) change the url to point to the html file you created in step 1. You can do this by replacing "AR.js-Template" with your repository name and "Covalent.html" with the html file you created for the project.
 3. You can save the picture by right clicking on it and saving as an image.
+4. You now need to create a image for the marker that the camera uses as reference to place objects over the real world. This marker should be asymmetrical and with not much fine detail. You can create the marker using any image editing software. The image should be a square so I recommend 1024x1024 pixels. This does not mean the logo inside the image has to be square though. If you need examples look at the markers on the Ar.js readme.
+5. Go To [https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html](https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html) and upload the image you created. You can make the image whatever resolution you need to for the size of what you are printing but dont make it too much bigger than the size of the image you created in the previous steps or the image may become blurry
+6. Click download marker and download image. The image will be what you print and the .patt file will be what the code references. The png will be what is printed. All the image files you just created can go in the markers folder of the repository under a new folder.
 
 ### 5. Test Marker
-Use cube
+1. To test your marker, change the folder name in this line <a-marker preset='pattern' type='pattern' url="markers/Test/pattern-marker.patt"> the url should point to the marker folder you created in previous steps.
+2. You can now scan the QRcode with your phones camera app and point your phone at the marker you created if the marker works then a yellow box will be displayed on the new marker.
 
 
 ### 6. Create or Find Model and Animation
