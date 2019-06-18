@@ -23,8 +23,8 @@ If you don't have a GitHub account sign up for one and have someone add you to t
 Cloning Instructions:
 1. Log in to the Covalent-Reality GitHub account. This can be found in File>Options>Accounts
 2. Set your own GitHub account as the active user. This can be found in File>Options>Git
-3. Create a new local repository by clicking on Current Project > Add > Create New Repository. Pick a location that easy to access and leave the other settings as none.
-4. Go to https://github.com/covalent-reality-ar/AR.js-Template.git and select the green "clone or download"  button and download the project.
+3. Create a new local repository by clicking on Current Project > Add > Create New Repository. Pick a location that easy to access and leave the other settings as none. Name the repository after the client so it easy to distinguish from the other projects.
+4. Go to [https://github.com/covalent-reality-ar/AR.js-Template.git](https://github.com/covalent-reality-ar/AR.js-Template.git) and select the green "clone or download"  button and download the project.
 5. Open the zip file and double click on the AR.js-Template-master folder. Copy all the files except .gitattributes to the local repository folder you created in Step 3.
 6. The GitHub desktop window should now display what files were added in the changes tab. Below the changes tab is the commit section. This is where you tell the GitHub desktop app that you want to keep any changes you make. Commit the new changes by adding a title and description and hitting the commit button.
 7. Now you can click the Publish Repository button in the top bar. Make sure keep this code private is not selected and select covalent-reality-ar in the dropdown menu under Orgainzation
@@ -36,7 +36,10 @@ Cloning Instructions:
 
 
 ### 3. Create Marker and QRcode
-Use
+1. In the git directory you created for the project copy the Covalent.html file and rename it to the name of the client you are making the project for.
+2. You can generate a QRcode using [https://covalent-reality-ar.github.io/AR.js-Template/qrcode.html](https://covalent-reality-ar.github.io/AR.js-Template/qrcode.html) change the url to point to the html file you created in step 1.
+3. You can save the picture by right clicking on it and saving as an image.
+
 ### 5. Test Marker
 Use cube
 
