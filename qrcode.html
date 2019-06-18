@@ -71,7 +71,145 @@ document.querySelector('#saveInUrl').addEventListener('change', updateARCode)
 //                PDF Generation
 //////////////////////////////////////////////////////////////////////////////
 
+function generatePdf(){
+        console.log('generate PDF')
 
+        var urlQrCode = document.querySelector('#urlQrCode').value
+
+        var docDefinition = {
+                header: [
+                        {
+                                text: 'AR.js by @jerome_etienne - https://github.com/jeromeetienne/ar.js',
+                                margin: [0, 0],
+                                alignment: 'center',
+                        },
+                ],
+                content: [
+                        {
+                                image: canvas.toDataURL(),
+                                width: 320,
+                                alignment: 'center',
+                        },
+                        {
+                                text: [
+                                        {
+                                                text: '\nAR-CODE ',
+                        			fontSize: 30,
+                        			bold: true,
+                                        },
+                                        {
+                                                text: 'for',
+                        			fontSize: 20,
+        			                bold: false,
+                                        }
+                                ],
+                                alignment: 'center',
+                        },
+                        {
+                                text: urlQrCode,
+                                alignment: 'center',
+                                margin: [0, 10],
+                        },
+                        {
+                                text: 'How to Use an AR-Code ?',
+        			fontSize: 24,
+                                margin: [0, 20],
+                        },
+                        {
+                                text: 'Step 1 - Get a Phone',
+        			bold: true,
+        			fontSize: 15,
+                        },
+                        {
+                                text: [
+                                        'It works on any browser with WebGL and WebRTC. So android works. Windows mobile works. ',
+                                        'IOS doesn\'t work unfortunately. IOS safari doesn\'t support WebRTC at the moment.',
+                                        ' Apple is currently working on it tho. Let\'s hope they join the party soon!'
+                                ],
+                                margin: [0, 10, 0 , 30],
+        		},
+                        {
+                                text: 'Step 2 - Scan the QR-Code',
+        			bold: true,
+        			fontSize: 15,
+                        },
+                        {
+                                text: [
+                                        'It will open your web browser to an augmented reality page. ',
+                                        'It will open the url from the qr-code to some AR.js content. ',
+                                        'Then your phone will use the camera to find out the position ',
+                                        'of the marker and display 3d content on top of it. ',
+                                ],
+                                margin: [0, 10, 0 , 30],
+        		},
+                        {
+                                text: 'Step 3 - Point the Phone at the Hiro Marker',
+        			bold: true,
+        			fontSize: 15,
+                        },
+                        {
+                                text: [
+                                        'You are ',
+                                        { text: 'DONE', bold: true, },
+                                        '! Enjoy the Augmented Reality :)',
+                                ],
+                                margin: [0, 10, 0 , 30],
+        		},
+                ],
+        }
+        pdfMake.createPdf(docDefinition).open();
+        // pdfMake.createPdf(docDefinition).download('optionalName.pdf');
+}
+
+
+//////////////////////////////////////////////////////////////////////////////
+//                build canvas
+//////////////////////////////////////////////////////////////////////////////
+var canvas = document.createElement('canvas');
+document.querySelector('#arcode-container').appendChild(canvas)
+canvas.width  = 1024;
+canvas.height = 1024;
+canvas.style.width  = '512px';
+canvas.style.height = '512px';
+
+var context = canvas.getContext('2d')
+
+        document.querySelector('#urlQrCode').value = 'https://covalent-reality-ar.github.io/AR.js-Template/Covalent.html'
+        updateARCode()
+
+
+function updateARCode(){
+        var urlQrCode = document.querySelector('#urlQrCode').value
+        var hideUiEnabled = document.querySelector('#hideUiEnabled').checked
+        var saveInUrl = document.querySelector('#saveInUrl').checked
+        var parameters = {
+                urlQrCode : urlQrCode,
+                hideUiEnabled: hideUiEnabled,
+        }
+
+        // generate the ar-code canvas
+        generateArCodeCanvas(canvas, urlQrCode, function onReady(){
+                console.log('ar-code generated for', urlQrCode)
+        })
+
+        if( hideUiEnabled === true ){
+                document.querySelector('#row-ui').style.display = 'none'
+                document.querySelector('#btnShowUI').style.display = 'block'
+        }else{
+                document.querySelector('#row-ui').style.display = 'block'
+                document.querySelector('#btnShowUI').style.display = 'none'
+        }
+
+        //////////////////////////////////////////////////////////////////////////////
+        //                update location.hash if suitable
+        //////////////////////////////////////////////////////////////////////////////
+        if( saveInUrl === true ){
+                location.hash = '#' + encodeURIComponent(JSON.stringify(parameters))
+        }else{
+                // magic to remove the old location.hash
+                history.pushState("", document.title, location.pathname + location.search);
+        }
+}
 
 //////////////////////////////////////////////////////////////////////////////
 //                Code Separator
