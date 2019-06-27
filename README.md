@@ -72,7 +72,7 @@ b. If the version is less than 2.80 then download the GLTF 2.0 coverter [reposit
 
 ### 8. Test Marker and Model
 1. Now you can delete the test code and uncomment the main code in the html file. It should look like this:
-
+---html
 <!doctype HTML>
 <html>
 
@@ -85,17 +85,17 @@ b. If the version is less than 2.80 then download the GLTF 2.0 coverter [reposit
 		<a-assets>
 			<a-asset-item id="Logo" src="models/CovalentLogo/Covalentlogo.gltf"></a-asset-item>
 		</a-assets>
-        <a-marker preset='pattern' type='pattern' url="markers/Covalent/pattern-marker.patt">
+    <a-marker preset='pattern' type='pattern' url="markers/Covalent/pattern-marker.patt">
 			<a-entity gltf-model="#Logo" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear">
 
 			</a-entity>
 
-        </a-marker>
-        <a-entity camera></a-entity>
+    </a-marker>
+    <a-entity camera></a-entity>
     </a-scene>
 </body>
 </html>
-
+---
 2. In the line that looks like: <a-asset-item id="Logo" src="models/CovalentLogo/Covalentlogo.gltf"></a-asset-item> you can change the src to point to your model.
 3. In the line that looks like: <a-marker  marker emitevents="true" cursor="rayOrigin: mouse" preset='pattern' type='pattern' url="markers/Covalent/pattern-marker.patt"> you can change the url to point to your marker.
 4. Now commit all these changes and push them to the online repository. If you can't see the model try scaling it down. This can be done in the 3D modeling program you used or by adding scale=".1 .1 .1" to the a-entity line. The numbers in the scale can be changed to scale it smaller or larger with 1 1 1 being no scaling.
