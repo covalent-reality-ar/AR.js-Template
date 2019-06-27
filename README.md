@@ -1,15 +1,3 @@
-```
-ToDo:
-AR way to view 3D models
-Change Covalent.html so it is commented out and the box test code is active
-
-Links to keep:
-Single Marker Business Card [example](https://www.youtube.com/watch?v=dRY6iuGkKBM)
-[AR Business Card example with picture marker and links](https://www.youtube.com/watch?v=pTITrp_xOis)
-[Link to webpage press F12 in and go to source tab to view code](https://ron-dagdag.azurewebsites.net/public/)
-https://aframe.io/aframe-inspector/examples/
-[environments?](https://github.com/donmccurdy/three-gltf-viewer/blob/faa02eb5948f3d3af5d2a510b559f9d7bf284b3b/src/viewer.js)
-```
 # AR.js-Template
 
 ## Introduction
