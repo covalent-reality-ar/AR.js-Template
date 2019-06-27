@@ -66,19 +66,18 @@ b. If the version is less than 2.80 then download the GLTF 2.0 coverter [reposit
 4. Add materials using the Blender color materials and following the [tutorial] (https://medium.com/@matthewmain/how-to-import-a-3d-blender-object-into-a-three-js-project-as-a-gltf-file-5a67290f65f2). Export as glb or embedded gltf as it packages all the files together and is easier to use.
 
 ### 8. Import glb file into gltf viewer
-1. go to: [gltf](https://gltf-viewer.donmccurdy.com/)
+1. go to: [gltf](https://gltf-viewer.donmccurdy.com/) viewer
 2. drag and drop your new glb file. Click on the Lighting tab and set the environment to none. This will be close to what your model will look like when using the AR framework.
 3. If it looks good then you can add the file to the models folder in a folder named after the client.
 
 ### 8. Test Marker and Model
 1. Now you can delete the test code and uncomment the main code in the html file. It should look like this:
----
+
 <!doctype HTML>
 <html>
 
 <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
 <script src="https://johnaloomis.github.io/CovalentAR/aframe/build/aframe-ar.js"></script>
-<script src="js/click.js"></script>
 
 
 <body style='margin : 0px; overflow: hidden;'>
@@ -86,7 +85,7 @@ b. If the version is less than 2.80 then download the GLTF 2.0 coverter [reposit
 		<a-assets>
 			<a-asset-item id="Logo" src="models/CovalentLogo/Covalentlogo.gltf"></a-asset-item>
 		</a-assets>
-        <a-marker  marker emitevents="true" cursor="rayOrigin: mouse" preset='pattern' type='pattern' url="markers/Covalent/pattern-marker.patt">
+        <a-marker preset='pattern' type='pattern' url="markers/Covalent/pattern-marker.patt">
 			<a-entity gltf-model="#Logo" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear">
 
 			</a-entity>
@@ -96,7 +95,7 @@ b. If the version is less than 2.80 then download the GLTF 2.0 coverter [reposit
     </a-scene>
 </body>
 </html>
----
+
 2. In the line that looks like: <a-asset-item id="Logo" src="models/CovalentLogo/Covalentlogo.gltf"></a-asset-item> you can change the src to point to your model.
 3. In the line that looks like: <a-marker  marker emitevents="true" cursor="rayOrigin: mouse" preset='pattern' type='pattern' url="markers/Covalent/pattern-marker.patt"> you can change the url to point to your marker.
 4. Now commit all these changes and push them to the online repository. If you can't see the model try scaling it down. This can be done in the 3D modeling program you used or by adding scale=".1 .1 .1" to the a-entity line. The numbers in the scale can be changed to scale it smaller or larger with 1 1 1 being no scaling.
