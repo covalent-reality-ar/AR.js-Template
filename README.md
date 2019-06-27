@@ -33,7 +33,7 @@ Cloning Instructions:
 
 ### 2. Atom for HTML
 1. Download [Atom](https://atom.io/)
-2. In the Welcome Guide tab open the project folder you created in the previous step.
+2. In the Welcome Guide tab open the project folder you created in the previous section.
 3. Go to the Git tab. To commit changes they need to be Staged. Do this by right clicking the files in the unstaged window and hitting stage. Then write a Commit Message and press Commit to master. You can then push the changes with the button at the bottom right side of the window. Log in to your own GitHub account so that your work is logged. At this point you can use GitHub desktop or Atom to commit changes and push them to the online repository.
 
 ### 3. Create QRcode
@@ -41,7 +41,7 @@ Cloning Instructions:
 2. You can generate a QRcode using [https://covalent-reality-ar.github.io/AR.js-Template/qrcode.html](https://covalent-reality-ar.github.io/AR.js-Template/qrcode.html) change the url to point to the html file you created in step 1. You can do this by replacing "AR.js-Template" with your repository name and "Covalent.html" with the html file you created for the project.
 3. You can save the picture by right clicking on it and saving as an image.
 
-### 4.Create Marker
+### 4. Create Marker
 4. You now need to create a image for the marker that the camera uses as reference to place objects over the real world. This marker should be asymmetrical and with not much fine detail. You can create the marker using any image editing software. The image should be a square so I recommend 1024x1024 pixels. This does not mean the logo inside the image has to be square though. If you need examples look at the markers on the Ar.js readme.
 5. Go To [https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html](https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html) and upload the image you created. You can make the image whatever resolution you need to for the size of what you are printing but dont make it too much bigger than the size of the image you created in the previous steps or the image may become blurry
 6. Click download marker and download image. The image will be what you print and the .patt file will be what the code references. The png will be what is printed. All the image files you just created can go in the markers folder of the repository under a new folder.
