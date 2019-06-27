@@ -72,7 +72,7 @@ b. If the version is less than 2.80 then download the GLTF 2.0 coverter [reposit
 
 ### 8. Test Marker and Model
 1. Now you can delete the test code and uncomment the main code in the html file. It should look like this:
----html
+---
 <!doctype HTML>
 <html>
 
