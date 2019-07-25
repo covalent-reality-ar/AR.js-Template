@@ -43,7 +43,7 @@ Cloning Instructions:
 ### 6. Test Marker
 1. To test your marker, change the folder name in this line <a-marker preset='pattern' type='pattern' url="markers/Covalent/pattern-Marker.patt"> the url should point to the marker folder you created in previous steps and the .patt file should be the same name as the one in the folder.
 2. You can now scan the QRcode with your phones camera app and point your phone at the marker you created. This can be either on the computer monitor. If the marker works then a yellow box will be displayed on the new marker.
-3. GitHub pages takes awhile to update to the latest version of your repository. One way to test changes to the files is to
+3. GitHub pages takes awhile to update to the latest version of your repository. One way to test changes to the files is to press F12 on your browser while loading the page. If the source file changes the changes have been made.
 4. If the marker does not work then redo Section 4 with a different image.
 
 ### 7. Create model using Blender
