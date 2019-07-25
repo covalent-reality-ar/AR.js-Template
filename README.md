@@ -58,7 +58,7 @@ b. If the version is less than 2.80 then download the GLTF 2.0 converter [reposi
 2. drag and drop your new glb file. Click on the Lighting tab and set the environment to none. This will be close to what your model will look like when using the AR framework.
 3. If it looks good then you can add the file to the models folder in a folder named after the client.
 
-### 8. Test Marker and Model
+### 9. Test Marker and Model
 1. Now you can delete the test code and uncomment the main code in the html file. It should look like this:
 ```HTML
 <!doctype HTML>
