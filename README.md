@@ -17,7 +17,7 @@ Cloning Instructions:
 4. Go to [https://github.com/covalent-reality-ar/AR.js-Template.git](https://github.com/covalent-reality-ar/AR.js-Template.git) and select the green "clone or download"  button and download the project.
 5. Open the zip file and double click on the AR.js-Template-master folder. Copy all the files except .gitattributes,README.md, and qrcode.html to the local repository folder you created in Step 3.
 6. The GitHub desktop window should now display what files were added in the changes tab. Below the changes tab is the commit section. This is where you tell the GitHub desktop app that you want to keep any changes you make. Commit the new changes by adding a title and description and hitting the commit button.
-7. Now you can click the Publish Repository button in the top bar. Make sure keep this code private is not selected and select covalent-reality-ar in the dropdown menu under Orgainzation
+7. Now you can click the Publish Repository button in the top bar. Make sure keep this code private is not selected and select covalent-reality-ar in the dropdown menu under Organization
 
 ### 2. Atom for HTML
 1. Download [Atom](https://atom.io/)
@@ -49,7 +49,7 @@ Cloning Instructions:
 ### 7. Create model using Blender
 1. Download the latest version of [Blender](https://www.blender.org/)
 2. a. If the version is above 2.80 then enable the GLTF 2.0 plugin by going to File>User Preferences>Add-ons and make sure GLTF 2.0 is checked.  
-b. If the version is less than 2.80 then download the GLTF 2.0 coverter [repository](https://github.com/KhronosGroup/glTF-Blender-IO#installation) copy the addons/io_scene_gltf2 folder into the scripts/addons/ directory of the Blender installation. Then enable the GLTF 2.0 plugin by going to File>User Preferences>Add-ons and make sure GLTF 2.0 is checked.
+b. If the version is less than 2.80 then download the GLTF 2.0 converter [repository](https://github.com/KhronosGroup/glTF-Blender-IO#installation) copy the addons/io_scene_gltf2 folder into the scripts/addons/ directory of the Blender installation. Then enable the GLTF 2.0 plugin by going to File>User Preferences>Add-ons and make sure GLTF 2.0 is checked.
 3. Make you model in Blender. I recommend looking up a reference image of the thing you want to make and dragging and dropping it into the window. Then you can hit the 5 num pad key and the 7 num pad key to go into orthographic view and top view. From here you can trace the image using the knife tool(shift+s) and extrude(e key while plane is selected) the plane you create from tracing it. This may take a lot of looking up Blender tutorials online.
 4. Add materials using the Blender color materials and following the [tutorial] (https://medium.com/@matthewmain/how-to-import-a-3d-blender-object-into-a-three-js-project-as-a-gltf-file-5a67290f65f2). Export as glb or embedded gltf as it packages all the files together and is easier to use.
 
